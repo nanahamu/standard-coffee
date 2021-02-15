@@ -1,0 +1,42 @@
+/*ベース START*/
+body{
+    color: #333;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+a:link{
+    text-decoration: none;
+}
+/*ベース END*/
+
+
+/*ヘッダー START*/
+.header{
+    height: 120px;
+    display: flex;
+}
+.shop-name{
+    font-size: 29px;
+}
+.pc-nav-item{
+    color: #a03c8c;
+    font-size: 23px;
+    cursor: pointer;
+    display: inline-block;
+}
+/*ヘッダー END*/
+
+/*PC表示 START*/
+@media (min-width: 769px) {
+    #responsive-global-nav{
+        display: none;
+    }
+}
+/*PC表示 END*/
+
+/*スマホ・タブレット表示 START*/
+@media (max-width: 768px) {
+    #pc-global-nav{
+        display: none;
+    }
+}
+/*スマホ・タブレット表示 END*/
