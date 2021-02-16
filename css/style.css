@@ -1,20 +1,10 @@
-/*ベース START*/
+/*ベース・共通部分 START*/
 body{
     color: #333;
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     margin: 0;
 }
-/*a:link{*/
-/*    text-decoration: none;*/
-/*}*/
-
-.container{
-    padding: 50px 50px; 
-}
-.wrapper{
-    padding: 0 180px;
-}
-/*ベース END*/
+/*ベース・共通部分 END*/
 
 
 /*ヘッダー START*/
@@ -26,7 +16,6 @@ body{
     background-color: #faf5ea; /*テスト*/
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /*ヘッダー下の影*/
     text-decoration: none;
-    
 }
 .shop-name{
     font-size: 30px;
@@ -36,10 +25,10 @@ body{
     bottom: 20px; /*位置固定*/
 }
 #pc-global-nav{
+    font-weight: bold;
     position: absolute; /*位置固定*/
     left: 230px; /*位置固定*/
     bottom: 20px; /*位置固定*/
-    font-weight: bold;
 }
 #pc-global-nav a, #responsive-global-nav a{
     text-decoration: none;
@@ -51,7 +40,7 @@ body{
     padding-left: 25px; /*ナビ間の余白*/
 }
 .pc-nav-item a{
-    color: #a03c8c; /*テスト*/
+    color: #a03c8c;
     font-size: 23px;
     cursor: pointer;
     transition: 0.2s; /*hoverが0.2秒で変化*/
@@ -60,20 +49,26 @@ body{
     color: gray; /*テスト*/
 }
 .news{
+    font-weight: bold;
     position: absolute; /*位置固定*/
     top: 20px; /*位置固定*/
     right: 50px; /*位置固定*/
-    font-weight: bold;
 }
 .news span{
     padding-right: 20px;
-    color: red;
+    color: #cf1126;
 }
 /*ヘッダー END*/
 
 /*メイン START*/
-.main{
+.container{
+    padding: 50px 50px; 
+}
+.top-container{
     padding-top: 120px;
+}
+.wrapper{
+    padding: 0 180px;
 }
 .heading{
     font-size: 40px;
@@ -84,101 +79,9 @@ body{
     font-size: 15px;
     padding-left: 10px;
 }
-.category{
-    margin-bottom: 20px;
-}
-.menu-area{
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.menu-name{
-    padding-top: 10px;
-    padding-left: 10px;
-}
-.price{
-    float: right;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-.menu-card{
-    width: 30%;
-}
-.menu-card + .menu-card{
-    margin-left: 30px;
-}
-.menu-img{
-    width: 100%;
-}
-/*メイン END*/
-
-.slider{
-    width: 100%;
-}
-.slider img{
-    width: 100%;
-    background-size: cover;
-}
-.scroll-btn{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-decoration: none;
-    padding-top: 60px;
-    color: white; /*テスト*/
-}
-
-.scroll-btn span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb 1.5s infinite;
-  animation: sdb 1.5s infinite;
-  box-sizing: border-box;
-  
-}
-@-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-@keyframes sdb {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-
 .intro{
     padding: 70px 230px;
 }
-
 .intro-title{
     font-size: 20px;
     padding-bottom: 20px;
@@ -193,21 +96,44 @@ body{
 .info-item a{
     padding-left: 20px;
 }
-
+.category{
+    margin-bottom: 20px;
+}
+.menu-area{
+    display: flex;
+    margin-bottom: 20px;
+}
+.menu-card{
+    width: 30%;
+}
+.menu-card + .menu-card{
+    margin-left: 30px;
+}
+.menu-img{
+    width: 100%;
+}
+.menu-name{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.price{
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
 .table{
     width: 800px;
     margin: 0 auto;
     line-height: 150%;
     font-size: 15px;
+    border: 1px solid #d0c8ba;
 }
 .table span{
     color: #cf1126;
     letter-spacing: 1px;
     font-size: 18px;
 }
-tbody{
-    border: 1px solid #d0c8ba;
-}
+
 .table th{
     background-color: #ede0ca;
     padding: 10px;
@@ -223,14 +149,99 @@ tbody{
     width: 54px;
     height: 36px;
 }
+/*メイン END*/
+
+/*スライダー START*/
+.slider{
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+    background-size: cover;
+}
+/*スライダー END*/
+
+/*スクロール矢印 START*/
+.scroll-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+    padding-top: 60px;
+    color: white; /*テスト*/
+}
+.scroll-btn span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+@keyframes sdb {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+/*スクロール矢印 END*/
+
+/*ヘッダー START*/
 .footer{
-    background-color: #faf5ea; /*テスト*/
+    background-color: #faf5ea;
     padding: 10px;
 }
 .copyright{
     text-align: center;
     color: #000080;
 }
+/*ヘッダー END*/
+
+/*スクロールフェードイン START*/
+.scroll{ /*アニメーション要素のスタイル*/
+  opacity : 0;
+  visibility: hidden;
+  transition: 2s;
+  transform: translateY(30px);
+}
+.active{ /*アニメーション要素までスクロールした時のスタイル*/
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/*スクロールフェードイン END*/
+
 /*PC表示 START*/
 @media (min-width: 769px) {
     #responsive-global-nav{
@@ -247,6 +258,5 @@ tbody{
     #pc-global-nav{
         display: none;
     }
-    
 }
 /*スマホ・タブレット表示 END*/
