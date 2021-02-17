@@ -62,7 +62,7 @@ body{
 
 /*メイン START*/
 .container{
-    padding: 50px 50px; 
+    padding: 50px; 
 }
 .top-container{
     padding-top: 120px;
@@ -388,6 +388,53 @@ body{
     /*ヘッダー END*/
 
     /*メイン START*/
+    .container{
+        padding: 5px 20px; 
+    }
+    .top-container{
+        padding-top: 80px;
+    }
+    .wrapper{
+        padding: 0;
+    }
+    .heading{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .intro{
+        padding: 5px;
+    }
+    .intro-title{
+        font-size: 15px;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    .intro-text{
+        line-height: 15px;
+        font-size: 12px;
+    }
+    
+    
+    .info-item{
+        letter-spacing: 1px;
+    }
+    .info-item a{
+        padding-left: 20px;
+    }
+    
+    
+    
+    
+    
+    .table{
+        width: 100%;
+        margin: 0 auto;
+        line-height: 120%;
+        font-size: 13px;
+    }
+    .info-area{
+        width: 100%;
+    }
     /*メイン END*/
 
     /*スライダー START*/
