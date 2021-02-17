@@ -471,6 +471,9 @@ body{
     /*スライダー END*/
 
     /*スクロール矢印 START*/
+    .scroll-btn, .scroll-btn span{
+        display: none;
+    }
     /*スクロール矢印 END*/
 
     /*フッター START*/
