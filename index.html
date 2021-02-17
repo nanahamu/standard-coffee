@@ -75,11 +75,11 @@
             <section class="container" id="information">
                 <h2 class="heading scroll">information<span>お知らせ</span></h2>
                 <div class="wrapper">
-                    <p class="info-item">2021/02/10<a href="index.html" target="_parent">新型コロナウイルス感染拡大防止の取り組みとお知らせ</a></p>
-                    <p class="info-item">2021/01/15<a href="index.html" target="_parent">新メニューのご紹介</a></p>
-                    <p class="info-item">2021/01/01<a href="index.html" target="_parent">新年のご挨拶とスタンダード・コーヒーの抱負</a></p>
-                    <p class="info-item">2020/12/10<a href="index.html" target="_parent">クリスマス限定ドリンクのお知らせ</a></p>
-                    <p class="info-item">2020/11/21<a href="index.html" target="_parent">電子マネー決済に関するお知らせ</a></p>
+                    <p class="info-item">2021/02/10<a href="#" target="_parent">新型コロナウイルス感染拡大防止の取り組みとお知らせ</a></p>
+                    <p class="info-item">2021/01/15<a href="#" target="_parent">新メニューのご紹介</a></p>
+                    <p class="info-item">2021/01/01<a href="#" target="_parent">新年のご挨拶とスタンダード・コーヒーの抱負</a></p>
+                    <p class="info-item">2020/12/10<a href="#" target="_parent">クリスマス限定ドリンクのお知らせ</a></p>
+                    <p class="info-item">2020/11/21<a href="#" target="_parent">電子マネー決済に関するお知らせ</a></p>
                 </div>
             </section>
             <!--インフォメーションコンテナ END-->
@@ -210,17 +210,19 @@
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script  type="text/javascript">
             $(function() {
+                // ハンバーガーメニュー START
                 $('#nav-toggle').on('click', function() {
                     $('body').toggleClass('open');
                 });
                 $('#responsive-global-nav a').on('click', function() {
                     $('body').removeClass('open');
                 });
+                // ハンバーガーメニュー END
                 // スライダー START
                 $('.slider').slick({
                     autoplay: true,//自動でスクロール
-                    autoplaySpeed: 4000,//自動再生のスライド切り替えまでの時間をミリ秒で設定
-                    speed: 2000,//スライド/フェードアニメーションの速度を設定
+                    autoplaySpeed: 3000,//自動再生のスライド切り替えまでの時間をミリ秒で設定
+                    speed: 1000,//スライド/フェードアニメーションの速度を設定
                     cssEase: "linear",//波のないアニメーションを指定
                     slidesToShow: 1, //表示するスライドの数
                     slidesToScroll: 1, //スクロールで切り替わるスライドの数

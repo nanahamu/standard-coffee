@@ -255,7 +255,6 @@ body{
 
 /*スマホ・タブレット表示 START*/
 @media (max-width: 768px) {
-    
     /*ベース・共通部分 START*/
     .responsive-hid{
         display: none;
@@ -457,6 +456,10 @@ body{
         margin: 0 auto;
         line-height: 120%;
         font-size: 13px;
+    }
+    .table th{
+        width: 50px;
+        font-size: 10px;
     }
     .info-area{
         width: 100%;
