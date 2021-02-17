@@ -429,20 +429,18 @@ body{
         margin-bottom: 10px;
     }
     .menu-area{
+        width: 100%;
         margin-bottom: 10px;
-        display: block;
     }
     .menu-card{
-        width: 100%;
+        width: 50%;
         padding-bottom: 20px;
         
     }
     .menu-card + .menu-card{
-        margin-left: 0;
+        margin-left: 3px;
     }
-    .menu-img{
-        width: 100%;
-    }
+    
     .menu-name{
         padding-top: 5px;
         padding-left: 5px;
@@ -450,6 +448,9 @@ body{
     .price{
         padding-right: 5px;
         padding-bottom: 5px;
+    }
+    .menu-name, .price{
+        font-size: 10px;
     }
     
     .table{
