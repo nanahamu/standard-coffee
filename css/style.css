@@ -376,7 +376,7 @@ body{
     /*ハンバーガーメニュー・スムーススクロール END*/
     .news{
         font-weight: normal;
-        font-size: 6px;
+        font-size: 8px;
         top: 65px; /*位置固定*/
         right: 0; /*位置固定*/
         left: 20px;/*位置固定*/
