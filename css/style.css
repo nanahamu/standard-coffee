@@ -91,7 +91,7 @@ body{
     line-height: 27px;
 }
 .info-item{
-    letter-spacing: 1px;
+    padding: 10px 0;
 }
 .info-item a{
     padding-left: 20px;
@@ -417,8 +417,7 @@ body{
     
     
     .info-item{
-        letter-spacing: normal;
-        font-size: 10px;
+        font-size: 0.7rem;
     }
     .info-item a{
         padding-left: 10px;
