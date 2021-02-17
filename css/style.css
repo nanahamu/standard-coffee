@@ -400,7 +400,7 @@ body{
     }
     .heading{
         font-size: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
     .intro{
         padding: 5px;
@@ -426,10 +426,12 @@ body{
     
     
     .category{
+        font-size: 12px;
         margin-bottom: 10px;
     }
     .menu-area{
         width: 100%;
+        display: flex;
         margin-bottom: 10px;
     }
     .menu-card + .menu-card{
@@ -446,6 +448,9 @@ body{
     }
     .menu-name, .price{
         font-size: 10px;
+    }
+    .caption{
+        font-size: 12px;
     }
     
     .table{
