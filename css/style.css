@@ -322,7 +322,7 @@ body{
     #nav-toggle {
         position: fixed;
         top: 30px;
-        right: 30px;
+        right: 20px;
         height: 20px;
         cursor: pointer;
     }
