@@ -104,7 +104,7 @@ body{
     margin-bottom: 20px;
 }
 .menu-card{
-    width: 30%;
+    width: 33%;
 }
 .menu-card + .menu-card{
     margin-left: 30px;
@@ -431,11 +431,6 @@ body{
     .menu-area{
         width: 100%;
         margin-bottom: 10px;
-    }
-    .menu-card{
-        width: 50%;
-        padding-bottom: 20px;
-        
     }
     .menu-card + .menu-card{
         margin-left: 3px;
