@@ -217,7 +217,7 @@ body{
 }
 /*スクロール矢印 END*/
 
-/*ヘッダー START*/
+/*フッター START*/
 .footer{
     background-color: #faf5ea;
     padding: 10px;
@@ -226,7 +226,7 @@ body{
     text-align: center;
     color: #000080;
 }
-/*ヘッダー END*/
+/*フッター END*/
 
 /*スクロールフェードイン START*/
 .scroll{ /*アニメーション要素のスタイル*/
@@ -255,8 +255,137 @@ body{
 
 /*スマホ・タブレット表示 START*/
 @media (max-width: 768px) {
+    
+    /*ベース・共通部分 START*/
+    /*ベース・共通部分 END*/
+    
+    /*ヘッダー START*/
+    .header{
+        height: 80px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); /*ヘッダー下の影*/
+    }
+    .shop-name{
+        font-size: 20px;
+        position: absolute; /*位置固定*/
+        left: 20px; /*位置固定*/
+        bottom: 10px; /*位置固定*/
+    }
     #pc-global-nav{
         display: none;
     }
+    #responsive-global-nav{
+        background: #faf5ea;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1100;
+        text-align: center;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 29px;
+        opacity: 0;
+        transition: opacity .6s ease, visibility .6s ease;
+    }
+    #responsive-global-nav a{
+        display: block;
+        color: #a03c8c;
+        text-decoration: none;
+        padding: 10px 0;
+        transition: color .6s ease;
+    }
+    #responsive-global-nav ul li{
+        opacity: 0;
+        transform: translateX(200px);
+        transition:  transform .6s ease, opacity .2s ease;
+    }
+    .open {
+        overflow: hidden;
+    }
+    .open #responsive-global-nav{
+        visibility: visible;
+        opacity: 1;
+    }.open #responsive-global-nav li{
+        opacity: 1;
+        transform: translateX(0);
+        transition:  transform 1s ease, opacity .9s ease;
+    }
+    /*ハンバーガーメニュー・スムーススクロール START*/
+    #nav-toggle {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+    #nav-toggle div{
+        position: relative;
+        width: 30px;
+    }
+    #nav-toggle span{
+        width: 100%;
+        height: 1px;
+        left: 0;
+        display: block;
+        background: #a03c8c;
+        position: absolute;
+        transition: transform .6s ease-in-out, top .5s ease;
+    }
+    #nav-toggle span:nth-child(1) {
+        top: 0;
+    }
+    #nav-toggle span:nth-child(2) {
+        top: 10px;
+    }
+    #nav-toggle span:nth-child(3) {
+        top: 20px;
+    }
+    #nav-toggle:hover span:nth-child(1) {
+        top: 0;
+    }
+    #nav-toggle:hover span:nth-child(3) {
+        top: 20px;
+    }
+    .open #nav-toggle span{
+        background: #a03c8c;
+    }
+    .open #nav-toggle span:nth-child(1) {
+        top: 10px;
+        transform: rotate(45deg);
+    }
+    .open #nav-toggle span:nth-child(2) {
+        top: 10px;
+        width: 0;
+        left: 50%;
+    }
+    .open #nav-toggle span:nth-child(3) {
+        top: 10px;
+        transform: rotate(-45deg);
+    }
+    #nav-toggle {
+        z-index: 1200;
+    }
+    /*ハンバーガーメニュー・スムーススクロール END*/
+    /*ヘッダー END*/
+
+    /*メイン START*/
+    /*メイン END*/
+
+    /*スライダー START*/
+    /*スライダー END*/
+
+    /*スクロール矢印 START*/
+    /*スクロール矢印 END*/
+
+    /*フッター START*/
+    /*フッター END*/
+
+    /*スクロールフェードイン START*/
+    /*スクロールフェードイン END*/
 }
 /*スマホ・タブレット表示 END*/

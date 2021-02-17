@@ -208,6 +208,14 @@
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script  type="text/javascript">
             $(function() {
+                $(function () {
+                    $('#nav-toggle').on('click', function() {
+                        $('body').toggleClass('open');
+                    });
+                    $('#responsive-global-nav a').on('click', function() {
+                        $('body').removeClass('open');
+                    });
+                });
                 // スライダー START
                 $('.slider').slick({
                     autoplay: true,//自動でスクロール
