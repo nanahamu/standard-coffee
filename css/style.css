@@ -268,7 +268,7 @@ body{
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); /*ヘッダー下の影*/
     }
     .shop-name{
-        font-size: 20px;
+        font-size: 23px;
         position: absolute; /*位置固定*/
         left: 20px; /*位置固定*/
         top: 10px; /*位置固定*/
